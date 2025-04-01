@@ -6,7 +6,6 @@ import store from "./app/store";
 import Layout from "./layouts/Layout";
 import Loading from "./components/Loading";
 import Contact from "./components/Contact";
-import Chatbot from "./Chatbot";
 
 const Home = lazy(() => import("./pages/Home"));
 const Cart = lazy(() => import("./components/Cart"));
@@ -35,6 +34,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Provider store={store}>
       <RouterProvider router={router} />
     </Provider>
-    <Chatbot/>
   </React.StrictMode>
 );
